@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Homework-6</title>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 text-center">Weather Dashboard</h1>
+        </div>
+    </div>
+    <div class="city"></div>
+    <div class="wind"></div>
+    <div class="humidity"></div>
+    <div class="temp"></div>
+    <div class="tempF"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3 container cities card ">
+
+                <h5>Search for a city:</h5>
+                <form id="locationForm" method="POST" class="d-flex justify-content-center">
+                    <input type="text" placeholder="zip code?" name="search-text" id="searchText" />
+                    <button id="search-btn" class=" fa fa-search search-btn btn " aria-hidden="true" disabled></button>
+                </form>
+                <ul id="recentSearches"> </ul>
+
+            </div>
+
+            <div class="col">
+                <div class="row container currentTemp card">
+                    <h4 class="cityCurrent"></h4>
+                    <img class="cityCurrentSource" src="" alt="Weather Image">
+                    <h6 class="currentTempDisplay"></h6>
+                    <h6 class="currentHumidityDisplay"></h6>
+                    <h6 class="currentwindspeedDisplay"></h6>
+                    <h6 class="currentUVIndexDisplay"></h6>
+                    <h6 class="uvIndex"></h6>
+                </div>
+
+                <div class="row container card fiveDayOutside">
+                    <h5>Five day forcast:</h5>
+
+                    <div class="row fiveDay"></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="keys.js"></script>
+        <script src="script.js"> </script>
+</body>
+
+</html>

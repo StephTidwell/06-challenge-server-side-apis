@@ -1,0 +1,27 @@
+.currentTemp, .cities{
+  border:1px solid #cecece;
+}
+.cityCurrentSource{
+  width: 60px;
+  height: auto;
+  display: block;
+}
+
+.fiveDayItem{
+  margin: 1rem auto;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+#recentSearches li{
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 992px){
+    .currentTemp, .fiveDayOutside, .cities{
+        margin: 1rem auto;
+    }
+
+}
